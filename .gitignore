@@ -1,0 +1,7 @@
+# exclude data files
+*.nii.gz
+*.nii
+*.zarr
+
+# exclude build artifacts
+*.egg-info/

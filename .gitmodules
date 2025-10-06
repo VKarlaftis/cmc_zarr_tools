@@ -1,0 +1,3 @@
+[submodule "visualize_zarr_ng"]
+	path = visualize_zarr_ng
+	url = https://github.com/gamorosino/visualize_zarr_ng.git
