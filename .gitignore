@@ -5,3 +5,4 @@
 
 # exclude build artifacts
 *.egg-info/
+.DS_Store

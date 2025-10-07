@@ -14,14 +14,16 @@ requires-python = ">=3.10"
 
 dependencies = [
     "ngff-zarr",
-    "neuroglancer",
-    #"git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64"
+    #"neuroglancer",
+    "neuroglancer @ git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64"
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
-    "flake8"
+    "flake8",
+    "ipykernel",
+    "jupyter"
 ]
 
 [tool.setuptools]
