@@ -15,11 +15,11 @@ requires-python = ">=3.10"
 dependencies = [
     #"ngff-zarr",
     #"neuroglancer",
-    "neuroglancer @ git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64",
+    #"neuroglancer @ git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64",
     "nifti-zarr",
     #"nifti-zarr @ git+https://github.com/neuroscales/nifti-zarr-py",
     #"ngtools",
-    "ngtools @ git+https://github.com/neuroscales/ngtools",
+    "ngtools @ git+https://github.com/neuroscales/ngtools@6b23e014a86d174c4d56316de74c72ab6f83f885",
 ]
 
 [project.optional-dependencies]
