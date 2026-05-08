@@ -14,8 +14,8 @@ requires-python = ">=3.10"
 
 dependencies = [
     "ngff-zarr",
-    #"neuroglancer",
-    "neuroglancer @ git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64",
+    "neuroglancer",
+    #"neuroglancer @ git+https://github.com/fcollman/neuroglancer.git@NIFTI_float64",
     #"nifti-zarr",
     #"nifti-zarr @ git+https://github.com/neuroscales/nifti-zarr-py",
     #"ngtools",
