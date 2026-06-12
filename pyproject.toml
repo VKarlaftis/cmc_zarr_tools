@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cmc_zarr_tools"
-version = "0.1.0"
+version = "0.2.0"
 description = "Repository to convert CMCmultimodal data (PSOCT, DTI) from NIfTI to OME-Zarr and visualise them with Neuroglancer"
 authors = [
     { name = "Vasilis Karlaftis", email = "vasilis.karlaftis@ndcn.ox.ac.uk" }
@@ -15,6 +15,9 @@ requires-python = ">=3.10"
 dependencies = [
     "nifti-zarr",
     "ngtools",
+    "fslpy>=3.9,<4.0",
+    "scipy>=1.13,<2.0",
+    "numpy>=1.26,<3.0",
 ]
 
 [project.optional-dependencies]
@@ -25,11 +28,12 @@ dev = [
     "jupyter"
 ]
 
-[tool.setuptools]
-packages = ["visualize_zarr_ng"]
+[project.scripts]
+create_3d_zarr  = "scripts.create_3d_zarr:main"
+resample_to_ref = "scripts.resample_to_ref:main"
 
-[tool.setuptools.package-dir]
-visualize_zarr_ng = "visualize_zarr_ng"
+[tool.setuptools]
+packages = ["scripts"]
 
 [project.urls]
 Homepage = "https://github.com/VKarlaftis/cmc_zarr_tools"
